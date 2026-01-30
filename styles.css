@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: #2d2d2d;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.stat-card {
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 28px 32px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.stat-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.stat-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.stat-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.stat-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+  color: #6d6d6d;
+  justify-content: center;
+  flex: 1;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-optimal {
+  color: #2c8f3b;
+}
+
+.status-optimal .status-dot {
+  background: #2c8f3b;
+}
+
+.status-in-range {
+  color: #c7772b;
+}
+
+.status-in-range .status-dot {
+  background: #c7772b;
+}
+
+.status-out-range {
+  color: #e34b4b;
+}
+
+.status-out-range .status-dot {
+  background: #e34b4b;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+
+.stat-range {
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+.mini-scale {
+  width: 70px;
+  height: 64px;
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-scale-bar {
+  width: 8px;
+  height: 100%;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-segment {
+  width: 100%;
+}
+
+.seg-out {
+  background: #f25f5c;
+}
+
+.seg-in {
+  background: #d48a52;
+}
+
+.seg-opt {
+  background: #37a152;
+}
+
+.biomarker-modal {
+  border-radius: 20px;
+  padding: 16px 16px 28px;
+}
+
+.graph-wrapper {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #f0f0f0;
+  padding: 18px 20px 16px;
+}
+
+.graph-top-meta {
+  color: #7a7a7a;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.graph-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.graph-metric-label {
+  font-size: 0.85rem;
+}
+
+.graph-metric-value,
+.graph-metric-date {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.graph-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 8px;
+}
+
+.legend-item {
+  display: grid;
+  grid-template-columns: 16px auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.legend-bar {
+  width: 10px;
+  height: 56px;
+  border-radius: 999px;
+}
+
+.legend-text {
+  font-weight: 600;
+  color: #6f6f6f;
+}
+
+.legend-text small {
+  display: block;
+  font-weight: 500;
+  color: #a0a0a0;
+}
+
+.graph-canvas-wrap {
+  height: 180px;
+}
+
+.graph-footer {
+  margin-top: 8px;
+  color: #b0b0b0;
+  font-weight: 600;
+}
+
+.graph-bound {
+  font-size: 0.95rem;
+}

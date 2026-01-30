@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biomarker Cards</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container py-5">
+      <h1 class="section-title mb-4">Stat Cards</h1>
+      <div id="cardsContainer" class="d-grid gap-4"></div>
+    </main>
+
+    <div
+      class="modal fade"
+      id="biomarkerModal"
+      tabindex="-1"
+      aria-labelledby="biomarkerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content biomarker-modal">
+          <div class="modal-header border-0 pb-0">
+            <h2 class="modal-title" id="biomarkerModalLabel">Biomarker</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-2">
+            <div class="row g-4">
+              <div class="col-lg-3">
+                <div id="graphLegend" class="graph-legend"></div>
+              </div>
+              <div class="col-lg-9">
+                <div class="graph-wrapper">
+                  <div class="graph-top-meta d-flex justify-content-between">
+                    <div class="graph-metric">
+                      <span class="graph-metric-label">Latest result</span>
+                      <span id="graphDate" class="graph-metric-date">—</span>
+                    </div>
+                    <div class="graph-metric">
+                      <span class="graph-metric-label">Graph value</span>
+                      <span id="graphValue" class="graph-metric-value">—</span>
+                    </div>
+                  </div>
+                  <div class="graph-canvas-wrap">
+                    <canvas id="biomarkerChart" height="170"></canvas>
+                  </div>
+                  <div class="graph-footer d-flex justify-content-between">
+                    <span id="graphMinLabel" class="graph-bound">—</span>
+                    <span id="graphMaxLabel" class="graph-bound">—</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

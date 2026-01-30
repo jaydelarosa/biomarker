@@ -1,0 +1,4 @@
+Biomarker_Name,Unit,Male_18-39_Optimal,Male_18-39_InRange,Male_18-39_OutOfRange,Male_40-59_Optimal,Male_40-59_InRange,Male_40-59_OutOfRange,Male_60+_Optimal,Male_60+_InRange,Male_60+_OutOfRange,Female_18-39_Optimal,Female_18-39_InRange,Female_18-39_OutOfRange,Female_40-59_Optimal,Female_40-59_InRange,Female_40-59_OutOfRange,Female_60+_Optimal,Female_60+_InRange,Female_60+_OutOfRange
+Metabolic Health Score,score,75-100,60-75,<60,70-100,55-70,<55,65-100,50-65,<50,75-100,60-75,<60,70-100,55-70,<55,65-100,50-65,<50
+,,,,,,,,,,,,,,,,,,,
+Metabolic Health Score Graph Value: 78,,,,,,,,,,,,,,,,,,,
